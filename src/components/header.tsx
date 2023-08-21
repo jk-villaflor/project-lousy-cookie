@@ -14,6 +14,7 @@ export default function Header(){
             </Grid>
             <Grid item>
                 <div>Sign In</div>
+                <div>Cart</div>
             </Grid>
         </Grid>
     </div>)

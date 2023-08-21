@@ -2,7 +2,7 @@
 
 // import { useContext } from 'react'
 import ProductCard from '@/components/ProductCard'
-import { ReactNode } from 'react';
+// import { ReactNode } from 'react';
 
 export default function Boilerplate(){    
     
@@ -36,10 +36,17 @@ export default function Boilerplate(){
           
     
     return(
-        <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-4">
+        <div className="grid sm:grid-cols-3 
+        md:grid-cols-5
+        lg:grid-cols-6
+        xl:grid-cols-7
+        2xl:grid-cols-7         
+        gap-4">
             {
                 products.map((item)=>(
-                    <ProductCard key={item.id} 
+                    <ProductCard 
+                    key={item.id}
+                    productID={item.id} 
                     productName={item.name}
                     productPrice={item.price}
                     productCurrency={item.currencyCode}
