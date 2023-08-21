@@ -10,6 +10,7 @@ export default function Header(){
             </Grid>
             <Grid item xs={5} md={7}>
                 <input className="rounded-full outline outline-1 outline-gray-500" placeholder="Search for items"/>
+                {/* <TextField placeholder="Search For Items"/> */}
             </Grid>
             <Grid item>
                 <div>Sign In</div>
